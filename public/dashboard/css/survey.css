@@ -1,0 +1,109 @@
+.fab_delete {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: #7e3af2;
+  color: white;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.fab_edit {
+  position: fixed;
+  bottom: 2rem;
+  right: 6rem;
+  background-color: #7e3af2;
+  color: white;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.fab_add {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: #7e3af2;
+  color: white;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.fab_add:hover {
+  background-color: #642cc4;
+  transform: scale(1.1);
+}
+.fab_edit:hover {
+  background-color: #642cc4;
+  transform: scale(1.1);
+}
+.fab_delete:hover {
+  background-color: #642cc4;
+  transform: scale(1.1);
+}
+
+
+@keyframes surveyPopEdit {
+  
+  0%{
+    right: 0;
+    opacity: 0;
+  }
+  100%{
+    right: 6rem;
+    opacity: 1;
+  }
+}
+@keyframes surveyPopDelete {
+  
+  0%{
+    right: 0;
+    opacity: 0;
+  }
+  100%{
+    right: 2rem;
+    opacity: 1;
+  }
+}
+
+
+@keyframes surveyOutEdit {
+  
+  0%{
+    right: 6rem;
+    opacity: 1;
+  }
+  100%{
+    right: 0;
+    opacity: 0;
+  }
+}
+@keyframes surveyOutDelete {
+  
+  0%{
+    right: 2rem;
+    opacity: 0;
+  }
+  100%{
+    right: 0;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,174 @@
+.fab_menu {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #7e3af2;
+    color: white;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    animation: IN 0.5s  ease-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    z-index: 10000;
+  }
+  
+  .fab_menu:hover {
+    background-color: #642cc4;
+    transform: scale(1.1);
+  }
+
+  .fab_option_add {
+    position: fixed;
+    bottom: 2rem;
+    right: 7rem;
+    background-color: #7e3af2;
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    animation: InAdd 0.5s  ease-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    z-index: 10000;
+  }
+  
+  .fab_option_add:hover {
+    background-color: #642cc4;
+    transform: scale(1.1);
+  }
+
+  .fab_option_addBatch {
+    position: fixed;
+    bottom: 2rem;
+    right: 10rem;
+    background-color: #7e3af2;
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    animation: InAddBatch 0.5s  ease-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    z-index: 10000;
+  }
+  
+  .fab_option_addBatch:hover {
+    background-color: #642cc4;
+    transform: scale(1.1);
+  }
+
+  .fab_option_delete{
+    position: fixed;
+    bottom: 2rem;
+    right: 13rem;
+    background-color: #7e3af2;
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    animation: InDeleteBatch 0.5s  ease-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    z-index: 10000;
+  }
+  
+  .fab_option_delete:hover {
+    background-color: #642cc4;
+    transform: scale(1.1);
+  }
+  @keyframes IN {
+    0%{
+        right: 0;
+    }
+    100%{
+        right: 2rem;
+    }
+    
+  }
+
+  @keyframes InAdd {
+    0%{
+        right: 2rem;
+        opacity: 0;
+    }
+    100%{
+        right: 7rem;
+        opacity: 1;
+    }
+}
+
+
+@keyframes InAddBatch {
+    0%{
+        right: 2rem;
+        opacity: 0;
+    }
+    100%{
+        right: 10rem;
+        opacity: 1;
+    }
+}
+
+@keyframes InDeleteBatch {
+    0%{
+        right: 2rem;
+        opacity: 0;
+    }
+    100%{
+        right: 13rem;
+        opacity: 1;
+    }
+}
+
+@keyframes OutAdd {
+  0%{
+    right: 7rem;
+    opacity: 1;
+  }
+  100%{
+      right: 2rem;
+      opacity: 0;
+  }
+}
+
+
+@keyframes OutAddBatch {
+  0%{
+    right: 10rem;
+    opacity: 1;
+  }
+  100%{
+    right: 2rem;
+    opacity: 0;
+    
+  }
+}
+
+@keyframes OutDeleteBatch {
+  0%{
+    right: 13rem;
+    opacity: 1; 
+  }
+  100%{
+    right: 2rem;
+    opacity: 0;
+     
+  }
+}

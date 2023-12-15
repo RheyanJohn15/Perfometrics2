@@ -1,0 +1,19 @@
+.header {
+    width: 100%;
+    display: flex;
+    border: 1px solid black;
+    align-items: center; /* Added */
+  }
+  
+  .logo {
+    width: 20%;
+    border: 1px solid black;
+    display: flex; /* Added */
+    align-items: center; /* Added */
+  }
+  
+  .title {
+    width: 80%; /* Changed to 80% to accommodate the remaining space */
+    border: 1px solid black;
+  }
+  

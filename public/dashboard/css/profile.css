@@ -1,0 +1,25 @@
+.profile{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 200px;
+    flex-direction: column;
+}
+.profileImage{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+@media(max-width:600px){
+
+    .profileImage{
+        width: 150px;
+        height: 150px;
+    }
+}
